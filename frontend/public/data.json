@@ -1,38 +1,38 @@
 [
   {
     "id": "1",
-    "title": "Appartement en bord de mer",
-    "cover": "/images/mer.jpg",
-    "location": "Marseille"
+    "title": "Titre de la location",
+    "cover": "",
+    "location": "Unknowed"
   },
   {
     "id": "2",
-    "title": "Chalet dans les Alpes",
-    "cover": "/images/chalet.jpg",
-    "location": "Chamonix"
+    "title": "Titre de la location",
+    "cover": "",
+    "location": "Unknowed"
   },
   {
     "id": "3",
-    "title": "Villa avec piscine",
-    "cover": "/images/piscine.jpg",
-    "location": "Nice"
+    "title": "Titre de la location",
+    "cover": "",
+    "location": "Unknowed"
   },
   {
     "id": "4",
-    "title": "Loft moderne",
-    "cover": "/images/loft.jpg",
-    "location": "Lyon"
+    "title": "Titre de la location",
+    "cover": "",
+    "location": "Unknowed"
   },
   {
     "id": "5",
-    "title": "Studio cosy",
-    "cover": "/images/studio.jpg",
-    "location": "Paris"
+    "title": "Titre de la location",
+    "cover": "",
+    "location": "Unknowed"
   },
   {
     "id": "6",
-    "title": "Cabane dans les bois",
-    "cover": "/images/cabane.jpg",
-    "location": "Périgord"
+    "title": "Titre de la location",
+    "cover": "",
+    "location": "Unknowed"
   }
 ]
