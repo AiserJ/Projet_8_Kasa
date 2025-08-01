@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c67ab8a7",
+    "title": "Charmant appartement",
+    "cover": "/images/logement1.jpg",
+    "location": "Paris, France",
+    "tags": ["WiFi", "Cuisine"],
+    "host": {
+      "name": "Jean Dupont",
+      "picture": "/images/host1.jpg"
+    },
+    "rating": "4",
+    "description": "Appartement moderne et bien situé.",
+    "equipments": ["Chauffage", "Lave-vaisselle", "Télévision"]
+  }
+]

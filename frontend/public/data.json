@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Appartement en bord de mer",
+    "cover": "/images/mer.jpg",
+    "location": "Marseille"
+  },
+  {
+    "id": "2",
+    "title": "Chalet dans les Alpes",
+    "cover": "/images/chalet.jpg",
+    "location": "Chamonix"
+  },
+  {
+    "id": "3",
+    "title": "Villa avec piscine",
+    "cover": "/images/piscine.jpg",
+    "location": "Nice"
+  },
+  {
+    "id": "4",
+    "title": "Loft moderne",
+    "cover": "/images/loft.jpg",
+    "location": "Lyon"
+  },
+  {
+    "id": "5",
+    "title": "Studio cosy",
+    "cover": "/images/studio.jpg",
+    "location": "Paris"
+  },
+  {
+    "id": "6",
+    "title": "Cabane dans les bois",
+    "cover": "/images/cabane.jpg",
+    "location": "Périgord"
+  }
+]
