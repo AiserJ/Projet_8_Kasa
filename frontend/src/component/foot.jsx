@@ -1,7 +1,12 @@
+import React from "react";
+import "../component/foot.css";
+import logo from "../assets/logo_kasa.png";
+
 export default function Foot() {
   return (
-    <footer style={{ padding: '1rem', background: '#eee', marginTop: '2rem' }}>
-      <p>&copy; 2025 Kasa. Tous droits réservés.</p>
+    <footer className="footer">
+      <img src={logo} alt="Kasa logo" className="footer-logo" />
+      <p className="footer-text">© 2025 Kasa. All rights reserved</p>
     </footer>
   );
 }

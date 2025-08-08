@@ -1,0 +1,11 @@
+.accueil {
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}

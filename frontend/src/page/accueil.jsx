@@ -1,65 +1,48 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import styles from './accueil.module.css'
+import { useState, useEffect } from 'react';
+import Banniere from '../component/banniere';
+import Carte from '../component/carte';
 import banner from '../assets/banner_background.jpeg';
-
-
+import './accueil.css';
 
 function Accueil() {
-  const [logements, setLogements] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const [logements, setLogements] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data.json')
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Erreur de récupération des données')
-        }
-        return response.json()
+    fetch('http://localhost:8080/api/properties')
+      .then((res) => {
+        if (!res.ok) throw new Error('Erreur de récupération');
+        return res.json();
       })
       .then((data) => {
-        setLogements(data)
-        setIsLoading(false)
+        setLogements(data);
+        setIsLoading(false);
       })
-      .catch((error) => {
-        console.error('Erreur :', error)
-        setIsLoading(false)
-      })
-  }, [])
+      .catch((err) => {
+        console.error(err);
+        setIsLoading(false);
+      });
+  }, []);
 
-  if (isLoading) {
-    return <div>Chargement en cours...</div>
-  }
+  if (isLoading) return <div>Chargement en cours...</div>;
 
   return (
-    <main className={styles.accueil}>
-      {/* Bannière */}
-    <section
-      className={styles.banniere}
-      style={{
-        backgroundImage: `url(${banner})`,
-      }}
-    >
-      <div className={styles.overlay}></div>
-      <h1 className={styles.titre}>Chez vous, partout et ailleurs</h1>
-    </section>
+    <main className="accueil">
+      <Banniere image={banner} titre="Chez vous, partout et ailleurs" />
 
-      {/* Grille des cartes */}
-      <section className={styles.galerie}>
+      <section className="galerie">
         {logements.map((logement) => (
-          <Link
-            to={`/maison/${logement.id}`}
+          <Carte
             key={logement.id}
-            className={styles.card}
-          >
-            <img src={logement.cover} alt={logement.title} />
-            <h2>{logement.title}</h2>
-            <p>{logement.location}</p>
-          </Link>
+            id={logement.id}
+            cover={logement.cover}
+            title={logement.title}
+            location={logement.location}
+          />
         ))}
       </section>
     </main>
-  )
+  );
 }
 
-export default Accueil
+export default Accueil;

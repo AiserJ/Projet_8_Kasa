@@ -1,0 +1,15 @@
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-logo {
+  width: 122px; /* ajusté selon la capture */
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 16px;
+}
