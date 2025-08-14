@@ -1,0 +1,12 @@
+.tag {
+  background-color: #ff6060;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

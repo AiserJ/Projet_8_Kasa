@@ -3,7 +3,7 @@ import Layer from '../component/layer.jsx';
 import Accueil from '../page/accueil.jsx';
 import Propos from '../page/propos.jsx';
 import Maison from '../page/maison.jsx';
-import NonTrouve from '../page/nontrouve.jsx';
+import Nontrouve from '../page/nontrouve.jsx';
 
 export default function AppRouter() {
   return (
@@ -13,7 +13,7 @@ export default function AppRouter() {
           <Route path="/" element={<Accueil />} />
           <Route path="/propos" element={<Propos />} />
           <Route path="/maison/:id" element={<Maison />} />
-          <Route path="*" element={<NonTrouve />} />
+          <Route path="*" element={<Nontrouve />} />
         </Route>
       </Routes>
     </BrowserRouter>

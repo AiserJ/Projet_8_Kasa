@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import "../component/collapse.css";
 
-export default function Collapse({ title, content }) {
+export default function Collapse({ title, content, children }) {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
@@ -16,13 +16,11 @@ export default function Collapse({ title, content }) {
         ref={contentRef}
         className={`collapse-content-wrapper ${isOpen ? "open" : ""}`}
         style={{
-          maxHeight: isOpen
-            ? `${contentRef.current?.scrollHeight}px`
-            : "0px",
+          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
         }}
       >
         <div className="collapse-content">
-          <p>{content}</p>
+          {children ?? (typeof content === 'string' ? <p>{content}</p> : content)}
         </div>
       </div>
     </div>

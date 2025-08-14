@@ -28,3 +28,54 @@
 .link.active {
   text-decoration: underline;
 }
+
+@media (max-width: 640px) {
+
+  body {
+    width: auto;
+  }
+  
+  header, .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 15px;
+    max-width: 100%;
+    margin: 0px;
+  }
+
+  /* Logo compact mais lisible */
+  header .logo, .header .logo {
+    display: inline-block;
+    max-height: 40px;        /* adapte si ton logo est en <img> */
+  }
+
+  header .logo img, .header .logo img {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
+
+  /* Navigation à droite sur une seule ligne */
+  header ul, .header ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  header li a, .header li a {
+    font-size: 12px;
+    text-transform: uppercase;   /* comme ta maquette */
+    letter-spacing: .02em;
+    text-decoration: none;
+    padding: 6px 2px;            /* cible tactile min. */
+  }
+
+  /* optionnel : style pour le lien actif */
+  header li a.active, .header li a.active {
+    border-bottom: 2px solid currentColor;
+  }
+}

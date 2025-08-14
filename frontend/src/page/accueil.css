@@ -9,3 +9,42 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
+
+/* responsive */
+
+@media (max-width: 640px) {
+  .grille, .cards, .liste-logements {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 8px;
+  }
+
+  .carte, .card {
+    border-radius: 10px;
+    min-height: 200px;
+    overflow: hidden;
+  }
+
+  .carte__thumb, .card__thumb { aspect-ratio: 16 / 10; }
+  .carte__img, .card__img, .carte img, .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .carte__title, .card__title, .carte h2, .card h2 {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 10px 12px;
+  }
+
+  main.accueil {
+    padding: 12px 10px !important;
+    max-width: none;
+    margin: 0;
+  }
+
+}

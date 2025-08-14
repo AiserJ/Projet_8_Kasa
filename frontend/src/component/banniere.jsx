@@ -1,4 +1,5 @@
 import './banniere.css';
+import React from 'react';
 
 export default function Banniere({ image, titre }) {
   return (

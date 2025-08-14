@@ -1,0 +1,58 @@
+.hostcard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.hostcard__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hostcard__name {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  line-height: 1.1;
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.hostcard__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hostcard__rating {
+  display: flex;
+}
+
+.hostcard .rating {
+  display: flex;
+  gap: 6px;
+}
+
+.hostcard .rating__star {
+  font-size: 20px;
+}
+
+.hostcard .rating__star--full {
+  color: #ff6060;
+}
+
+.hostcard .rating__star--empty {
+  color: #e3e3e3;
+}
+
+@media (max-width: 768px) {
+  .hostcard {
+    align-items: flex-start;
+  }
+  .hostcard__name {
+    text-align: left;
+  }
+}
