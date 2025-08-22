@@ -8,6 +8,10 @@ export default function Carousel({ pictures = [], title = "" }) {
     setIndex((i) => (i + dir + pictures.length) % pictures.length);
   };
 
+
+  /// Récupération d'image, condition si plus d'une seule photo, go bouton
+  /// et le compteur ///
+
   return (
     <div className="carousel">
       <img

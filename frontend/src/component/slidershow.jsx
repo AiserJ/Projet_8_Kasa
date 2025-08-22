@@ -15,7 +15,7 @@ export default function Slidershow({ pictures = [], title = '' }) {
     [hasMany, pictures.length]
   );
 
-  // clavier ← →
+  // Clavier ← → // 
   useEffect(() => {
     const onKey = (e) => {
       if (!containerRef.current) return;
@@ -27,7 +27,7 @@ export default function Slidershow({ pictures = [], title = '' }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [go]);
 
-  // swipe mobile
+  // swipe mobile //
   const startX = useRef(0);
   const onTouchStart = (e) => { startX.current = e.touches[0].clientX; };
   const onTouchEnd = (e) => {

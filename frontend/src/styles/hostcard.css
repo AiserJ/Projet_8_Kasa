@@ -50,9 +50,22 @@
 
 @media (max-width: 768px) {
   .hostcard {
-    align-items: flex-start;
+    flex-direction: row;          /* étoiles + host sur la même ligne */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;                  /* occupe toute la largeur */
+    margin-top: 1rem;             /* petit espace par rapport aux tags */
   }
+
+  .hostcard__rating {
+    order: 1;                     /* étoiles à gauche */
+  }
+
+  .hostcard__top {
+    order: 2;                     /* host à droite */
+  }
+
   .hostcard__name {
-    text-align: left;
+    text-align: right;            /* le nom reste bien à droite du host */
   }
 }

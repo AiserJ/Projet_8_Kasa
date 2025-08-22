@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import "../component/collapse.css";
 
-export default function Collapse({ title, content, children }) {
+export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
@@ -20,7 +20,7 @@ export default function Collapse({ title, content, children }) {
         }}
       >
         <div className="collapse-content">
-          {children ?? (typeof content === 'string' ? <p>{content}</p> : content)}
+          {<p>{content}</p>}
         </div>
       </div>
     </div>

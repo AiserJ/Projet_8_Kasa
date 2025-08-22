@@ -8,5 +8,10 @@
   border-radius: 10px;
   display: inline-block;
   margin-right: 10px;
-  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+  }
 }

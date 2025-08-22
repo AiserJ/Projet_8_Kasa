@@ -6,6 +6,11 @@
   min-height: 70vh;
   text-align: center;
   gap: 1rem;
+
+  /* marge intérieure par défaut (desktop/tablette) */
+  padding: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .notfound__code {
@@ -24,4 +29,17 @@
   font-size: 0.9rem;
   color: black;
   text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .notfound {
+    padding: 1rem;
+  }
+  .notfound__code {
+    font-size: 8rem;
+  }
+  .notfound__text {
+    font-size: 1.1rem;
+  }
 }

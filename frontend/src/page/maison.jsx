@@ -7,6 +7,9 @@ import Tag from '../component/tag.jsx';
 import Collapse from '../component/collapse.jsx';
 import data from '../../../backend/data.json';
 
+/// Routing & recherche de l'ID ///
+/// Changement en chaîne de caractère & mémo jusqu'à ce qu'on recalcule ///
+
 export default function Maison() {
   const { id } = useParams();
 
@@ -19,6 +22,8 @@ export default function Maison() {
     return <Navigate to="/nontrouve" replace />;
   }
 
+  /// Extraction des propriétés JSON ///
+
   const {
     title,
     location,
@@ -30,6 +35,7 @@ export default function Maison() {
     equipments = [],
   } = logement;
 
+  /// Transformation des données en tableau propre /// 
   const normalizeToArray = (value) => {
     if (Array.isArray(value)) return value;
     if (typeof value === 'string') {
@@ -75,13 +81,13 @@ export default function Maison() {
 
         <section className="maison__details">
           <Collapse title="Description" content={description} />
-          <Collapse title="Équipements">
+          <Collapse title="Équipements" content={
             <ul className="maison__equipments">
               {equipmentList.map((eq) => (
                 <li key={eq}>{eq}</li>
               ))}
             </ul>
-          </Collapse>
+            }/>
         </section>
       </main>
     </div>

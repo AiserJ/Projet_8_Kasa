@@ -40,32 +40,15 @@ transform: rotate(180deg);
 }
 
 .collapse-content-wrapper {
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.collapse-content {
-  background-color: #f6f6f6;
-  padding: 1rem;
-  font-size: 16px;
-  color: #333;
-  border-radius: 0 0 5px 5px;
-}
-
-
-.collapse-content-wrapper {
   background: #f6f6f6;
+  flex-grow: 1;
   overflow: hidden;
-max-height: 0;
   transition: max-height 0.25s ease;
 }
 
 .collapse-content-wrapper.open {
-  max-height: 1000px;
-  flex: 1;
+  height: 100%;
+  display: flex;
 }
 
 .collapse-content { padding: 18px 20px; height: 100%; }
-
-.maison__equipments { margin: 0; padding: 0; list-style: none; }
-.maison__equipments li { line-height: 1.8; }
