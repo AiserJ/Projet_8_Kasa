@@ -26,8 +26,9 @@
 }
 
 .link.active {
-  text-decoration: none;
-}
+    color: black;
+    text-decoration: underline;
+  }
 
 @media (max-width: 640px) {
 
@@ -45,10 +46,9 @@
     margin: 0px;
   }
 
-  /* Logo compact mais lisible */
   header .logo, .header .logo {
     display: inline-block;
-    max-height: 40px;        /* adapte si ton logo est en <img> */
+    max-height: 40px;
   }
 
   header .logo img, .header .logo img {
@@ -57,7 +57,6 @@
     display: block;
   }
 
-  /* Navigation à droite sur une seule ligne */
   header ul, .header ul {
     display: flex;
     align-items: center;
@@ -68,13 +67,12 @@
   }
   header li a, .header li a {
     font-size: 12px;
-    text-transform: uppercase;   /* comme ta maquette */
+    text-transform: uppercase;
     letter-spacing: .02em;
     text-decoration: none;
-    padding: 6px 2px;            /* cible tactile min. */
+    padding: 6px 2px;
   }
 
-  /* optionnel : style pour le lien actif */
   header li a.active, .header li a.active {
     border-bottom: 2px solid currentColor;
   }

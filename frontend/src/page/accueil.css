@@ -13,7 +13,7 @@
 .card {
   position: relative;
   border-radius: 10px;
-  overflow: hidden; /* indispensable pour contenir l’ombre à l’intérieur */
+  overflow: hidden;
 }
 
 .card::after {
@@ -22,7 +22,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10%; /* ajuste à 5% ou 10% selon ton besoin */
+  height: 50%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
 }
 
@@ -38,7 +38,7 @@
 
   .carte, .card {
     border-radius: 10px;
-    max-height: 300px;
+    max-height: 250px;
     overflow: hidden;
   }
 

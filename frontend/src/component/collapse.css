@@ -52,3 +52,22 @@ transform: rotate(180deg);
 }
 
 .collapse-content { padding: 18px 20px; height: 100%; }
+
+@media (max-width: 768px) {
+  .collapse-header {
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+  }
+
+  .collapse-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .collapse-arrow {
+    font-size: 20px;
+  }
+}

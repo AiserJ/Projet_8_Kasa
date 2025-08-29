@@ -1,7 +1,6 @@
 import Banniere from "../component/banniere";
 import Collapse from "../component/collapse";
 import imagePropos from "../assets/banniere_propos.jpg";
-import "./propos.css";
 
 const dataPropos = [
   {

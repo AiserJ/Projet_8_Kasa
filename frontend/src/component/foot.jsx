@@ -1,6 +1,6 @@
 import React from "react";
 import "../component/foot.css";
-import logo from "../assets/logo_kasa.png";
+import logo from "../assets/logo_kasa_footer.png";
 
 export default function Foot() {
   return (

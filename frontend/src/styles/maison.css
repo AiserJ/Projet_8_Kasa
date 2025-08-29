@@ -57,13 +57,11 @@
 .maison__equipments li { line-height: 1.8; }
 
 @media (max-width: 768px) {
-  /* marge latérale légère comme sur la maquette */
   .maison,
-  .container {               /* si ta page est dans .container */
+  .container {
     padding-inline: 1rem;
   }
 
-  /* bandeau du haut en pile, largeur contenue */
   .maison__top {
     flex-direction: column;
     width: 100%;
@@ -73,16 +71,14 @@
     width: 100%;
   }
 
-  /* aligne hôte / rating comme sur la maquette */
   .maison__right {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* étoiles à gauche, hôte à droite */
+    justify-content: space-between;
     gap: 12px;
   }
 
-  /* titres/lieu: tailles un peu plus compactes */
   .maison__title {
     font-size: 25px;
     line-height: 1.3;
@@ -92,21 +88,18 @@
     margin-bottom: 8px;
   }
 
-  /* tags en ligne, retour à la ligne si besoin */
   .maison__tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
   }
 
-  /* collapses en une seule colonne, espacés */
   .maison__details {
     grid-template-columns: 1fr;
     margin: 16px 0 32px;
-    gap: 16px;
+    gap: 0px;
   }
 
-  /* sécurité: les collapses prennent toute la largeur */
   .collapse {
     width: 100%;
   }
