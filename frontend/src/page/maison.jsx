@@ -22,7 +22,7 @@ export default function Maison() {
     return <Navigate to="/nontrouve" replace />;
   }
 
-  /// Extraction des propriétés JSON ///
+  /// L'attendu du JSON, avec valeur de secours si API Vide ///
 
   const {
     title,
@@ -35,7 +35,8 @@ export default function Maison() {
     equipments = [],
   } = logement;
 
-  /// Transformation des données en tableau propre /// 
+  /// Transformation des données en tableau propre des données API ///
+  
   const normalizeToArray = (value) => {
     if (Array.isArray(value)) return value;
     if (typeof value === 'string') {

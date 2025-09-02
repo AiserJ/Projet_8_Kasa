@@ -2,6 +2,9 @@ import Banniere from "../component/banniere";
 import Collapse from "../component/collapse";
 import imagePropos from "../assets/banniere_propos.jpg";
 
+
+// Contenu de à propos //
+
 const dataPropos = [
   {
     title: "Fiabilité",
@@ -24,6 +27,8 @@ const dataPropos = [
       "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   },
 ];
+
+// Structure de la page //
 
 export default function Propos() {
   return (

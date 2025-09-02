@@ -5,6 +5,8 @@ export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
+  // Vérification & écoute ouvert/fermé //
+    // Déroulé du collapse //
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>

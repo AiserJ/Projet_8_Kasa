@@ -4,9 +4,13 @@ import Carte from '../component/carte';
 import banner from '../assets/banner_background.jpeg';
 import './accueil.css';
 
+// Création de tableau et booléan chargement des données //
+
 function Accueil() {
   const [logements, setLogements] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Appel d'API des données des maisons //
 
   useEffect(() => {
     fetch('http://localhost:8080/api/properties')
@@ -24,6 +28,8 @@ function Accueil() {
       });
   }, []);
 
+  // Chargement tant que isLoading est true //
+  
   if (isLoading) return <div>Chargement en cours...</div>;
 
   return (

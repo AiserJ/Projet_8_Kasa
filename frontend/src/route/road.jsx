@@ -1,3 +1,5 @@
+  // Création des routes, URL //
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layer from '../component/layer.jsx';
 import Accueil from '../page/accueil.jsx';

@@ -1,3 +1,5 @@
+// Cadre de l'application //
+
 import Head from '../component/head';
 import Foot from '../component/foot';
 import { Outlet } from 'react-router-dom';
