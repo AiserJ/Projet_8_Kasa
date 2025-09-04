@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import Carousel from '../component/carousel.jsx'
+import Carousel from '../component/slidershow.jsx'
 
 const pics = [
   '/img/one.jpg',
@@ -95,25 +95,6 @@ describe('Carousel', () => {
     expect(screen.getByText('2/3')).toBeInTheDocument()
 
     await user.keyboard('{ArrowLeft}')
-    expect(getImg()).toHaveAttribute('src', pics[0])
-    expect(screen.getByText('1/3')).toBeInTheDocument()
-  })
-
-  it.skip('swipe: glisser vers la gauche va à la slide suivante, vers la droite à la précédente', async () => {
-    render(<Carousel pictures={pics} title="Swipe" />)
-    const container = screen.getByTestId('carousel-container')
-
-    // swipe gauche : start (x=300) → end (x=100)
-    container.dispatchEvent(new TouchEvent('touchstart', { touches: [{ clientX: 300, clientY: 10 }] }))
-    container.dispatchEvent(new TouchEvent('touchend',   { changedTouches: [{ clientX: 100, clientY: 10 }] }))
-
-    expect(getImg()).toHaveAttribute('src', pics[1])
-    expect(screen.getByText('2/3')).toBeInTheDocument()
-
-    // swipe droite : start (x=100) → end (x=300)
-    container.dispatchEvent(new TouchEvent('touchstart', { touches: [{ clientX: 100, clientY: 10 }] }))
-    container.dispatchEvent(new TouchEvent('touchend',   { changedTouches: [{ clientX: 300, clientY: 10 }] }))
-
     expect(getImg()).toHaveAttribute('src', pics[0])
     expect(screen.getByText('1/3')).toBeInTheDocument()
   })

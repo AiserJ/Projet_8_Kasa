@@ -45,9 +45,6 @@
 
 
 
-
-
-
 /* Mobile: 1 colonne */
 @media (max-width: 768px) {
   .maison__details { grid-template-columns: 1fr; }

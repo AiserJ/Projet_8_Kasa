@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Banniere from '../component/banniere';
 import Carte from '../component/carte';
 import banner from '../assets/banner_background.jpeg';
-import './accueil.css';
+import "../styles/accueil.css";
 
 // Création de tableau et booléan chargement des données //
 

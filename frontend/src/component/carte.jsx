@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './carte.css';
+import "../styles/carte.css";
 
 // Structure de la carte, sans appel à l'API // 
 

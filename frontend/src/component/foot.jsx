@@ -1,5 +1,5 @@
 import React from "react";
-import "../component/foot.css";
+import "../styles/foot.css";
 import logo from "../assets/logo_kasa_footer.png";
 
 export default function Foot() {
